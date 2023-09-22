@@ -1,0 +1,111 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color:white;
+}
+header {
+	width: 100%;
+	height: 20px;
+	margin: 0 auto;
+	background-color: white;
+}
+main {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+}
+footer {
+	width: 100%;
+	height: 50px;
+	margin: 0 auto;
+	background-color: black;
+}
+section {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	text-align: center;
+}
+#intro {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: red;
+}
+.container-01, .container-02 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.container-01 > div{
+	width: 30%;
+	border: 0px;
+	margin: 1%;
+	padding: 1%;
+	background-color: #270666;
+}
+.container-02 > div{
+	width: 30%;
+	border: 0px;
+	margin: 1%;
+	padding: 1%;
+	background-color: #270666;
+}
+.container-01 > div img{
+	width: 100%;
+}
+.container-02 > div img{
+	width: 100%;
+}
+#intro img {
+	width: 100%;
+}
+:root {
+	font-size: 20px; /* MEDIDA BASE: 20PX = 1rem*/ 
+}
+@font-face {
+	font-family: miFuente01;
+	src: url(fonts/neuropolitical\ rg.otf)
+}
+h1 {
+	color:rgb(255, 255, 255);
+	font-size: 3rem;
+	line-height: 4.5rem;
+	font-family: miFuente01;
+}
+h2 {
+	color: #9e1c1c;
+	font-size: 1.5rem;
+	line-height: 1.75rem;	
+	font-family: 'Chakra Petch', sans-serif;
+	
+}
+p {
+	color: #ffffff;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	font-family: 'Chakra Petch', sans-serif;
+}
+/* Media Queries para moviles */
+@media screen and (max-width:768px){
+	header, main, footer{
+	width: 100%;
+	}
+	.container-01, .container-02 {
+		flex-direction: column;
+		align-items: center;
+	}
+	.container-01 > div, .container-02 > div{
+		border:none;
+		margin:1% 0;
+		width:100%;
+	}
+}
